@@ -19,14 +19,14 @@ int main()
 	SetConsoleOutputCP(1251);
 	vector<Node> tree;
 	Node n;
-	n.q = "ÍËÚ";
+	n.q = "–ö–∏—Ç";
 	tree.push_back(n);
 	for (;;)
 	{
 		int i = 0;
 		while (tree[i].yes != -1 && tree[i].no != -1)
 		{
-			cout << tree[i].q << "? (1 - ‰‡, 0 - ÌÂÚ) ";
+			cout << tree[i].q << "? (1 - –¥–∞, 0 - –Ω–µ—Ç) ";
 			int ans;
 			cin >> ans;
 			if (ans == 1)
@@ -34,17 +34,17 @@ int main()
 			else
 				i = tree[i].no;
 		}
-		cout << "›ÚÓ " << tree[i].q << "? (1 - ‰‡, 0 - ÌÂÚ) ";
+		cout << "—ç—Ç–æ " << tree[i].q << "? (1 - –¥–∞, 0 - –Ω–µ—Ç) ";
 		int ans;
 		cin >> ans;
 		if (ans == 1)
-			cout << "”„‡‰‡ÎË!" << endl;
+			cout << "–£–≥–∞–ª–∞–ª–∏" << endl;
 		else
 		{
-			cout << " ÚÓ ˝ÚÓ? ";
+			cout << "–ö—Ç–æ —ç—Ç–æ? ";
 			string anim;
 			cin >> anim;
-			cout << " ◊ÂÏ " << tree[i].q << " ÓÚÎË˜‡ÂÚÒˇ ÓÚ " << anim << "? ";
+			cout << " –ß–µ–º " << tree[i].q << " –æ—Ç–ª–∏—á–∞–µ—Ç—Å—è –æ—Ç " << anim << "? ";
 			string diff;
 			cin >> diff;
 			Node yes = tree[i];
@@ -56,7 +56,7 @@ int main()
 			tree.push_back(no);
 			tree[i].q = diff;
 		}
-		cout << "≈˘∏? (1 - ‰‡, 0 - ÌÂÚ) ";
+		cout << "–ï—â—ë —Ä–∞–∑? (1 - –¥–∞, 0 - –Ω–µ—Ç) ";
 		cin >> ans;
 		if (ans == 0)
 			break;
